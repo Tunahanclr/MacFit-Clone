@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BiUser, BiMenu } from 'react-icons/bi';
-import { Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
+import Hero from './Hero';
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,7 +19,7 @@ export default function Header() {
         <nav className={`lg:flex lg:items-center ${showMenu ? 'absolute top-16 bg-red-500 h-full w-full  left-0 right-0 grid place-content-center' : 'hidden'} lg:block`}>
           <ul className='lg:flex lg:gap-5 text-gray-600 text-lg font-medium'>
             <li>
-              <a href="/" className='hover:text-red-500 text-black font-bold text-xl hover:underline'>Kulüpler</a>
+              <NavLink to='kulupler' className='hover:text-red-500 text-black font-bold text-xl hover:underline'>Kulüpler</NavLink>
             </li>
             <li>
               <a href="/" className='hover:text-red-500 text-black font-bold text-xl hover:underline'>Mac+Mobil</a>
