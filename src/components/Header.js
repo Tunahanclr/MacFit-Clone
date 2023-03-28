@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BiUser, BiMenu } from 'react-icons/bi';
 import { NavLink, Outlet } from 'react-router-dom';
 import Hero from './Hero';
-
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -16,13 +15,13 @@ export default function Header() {
         <div className='w-20 lg:w-28'>
           <img src="https://www.macfit.com/assets/images/macfitlogo.svg" alt="MacFit Logo" />
         </div>
-        <nav className={`lg:flex lg:items-center ${showMenu ? 'absolute top-16 bg-red-500 h-full w-full  left-0 right-0 grid place-content-center' : 'hidden'} lg:block`}>
+        <nav className={`lg:flex lg:items-center ${showMenu ? 'absolute top-16 z-50 h-screen bg-red-500 h-full w-full  left-0 right-0 grid place-content-center' : 'hidden'} lg:block`}>
           <ul className='lg:flex lg:gap-5 text-gray-600 text-lg font-medium'>
             <li>
               <NavLink to='kulupler' className='hover:text-red-500 text-black font-bold text-xl hover:underline'>Kulüpler</NavLink>
             </li>
             <li>
-              <a href="/" className='hover:text-red-500 text-black font-bold text-xl hover:underline'>Mac+Mobil</a>
+              <a href="/" className=' hover:text-red-500 text-black font-bold text-xl hover:underline'>Mac+Mobil</a>
             </li>
             <li>
               <a href="/" className='hover:text-red-500 text-black font-bold text-xl hover:underline'>Topluluk</a>
