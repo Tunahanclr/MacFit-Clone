@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './About'
+import İnfermations from './İnfarmations'
 export default function Hero() {
 
   return (
@@ -11,10 +12,14 @@ export default function Hero() {
        <div className='text-center flex flex-col items-center justify-center'>
        <h2 className=' text-white text-[40px] md:text-[80px] font-extrabold max-w-4xl font-sans'>HAZIRSIN, HADİ BAŞLAYALIM!</h2>
         <p className='text-center text-white text-lg mt-4 md:text-xl'>Zihnen, ruhen ve bedenen daha iyi bir yaşam için adım at!</p>
-        <button className='text-center flex justify-center items-center mt-10 bg-red-500 rounded-full w-44 md:w-52  text-white font-semibold text-base md:text-lg h-[52px]'>Bize Katıl</button>
+        <button className='text-center flex justify-center items-center mt-10 bg-red-600 rounded-full w-44 md:w-52  text-white font-semibold text-base md:text-lg h-[52px]'>Bize Katıl</button>
        </div>
       </div>
+      
       <About/>
+    <div className='border-b border-gray-400 mt-36'></div>
+    <İnfermations/>
+
       </div>
   )
 }
